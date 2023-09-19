@@ -1,0 +1,67 @@
+<html>
+<head>
+<style>
+  body{
+    position: relative;
+    background-color: red;
+  }
+.container { 
+  height: 20px;
+  position: relative;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+.title{
+  font-size: 500%;
+  -webkit-text-stroke: 2px black;
+}
+.bodyText{
+  font-size: 400%;
+  -webkit-text-stroke: 2px black;
+}
+.button{
+ background-color: yellow;
+ border: none; 
+ padding: 20px;
+ text-align: center;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ border-radius: 12px;
+}
+h1 {text-align: center;
+    color: yellow;
+}
+p {text-align: center;
+  color: yellow;
+}
+
+
+</style>
+</head>
+<body>
+<div class="centered">
+<p class="title">Check out our new Pizza Dude Website!</p>
+<p class="bodyText">Please visit our new website to see our menu, give us a call, or place an online order!</p>
+
+  <div class="container">
+    <div class="center">
+      <button class="button" onclick='window.location.href = "http://pizzadudedfw.com/"'>Click Here!</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
